@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Movie Signup</title>
+  <link rel="stylesheet" href="../CSS/signup.css">
+</head>
+<body>
+  <div class="signup-container">
+    <div class="poster">
+      <img src="../IMAGES/wp1945909.jpg" alt="Movie Poster">
+    </div>
+    <div class="login-form">
+      <h2>Create Account</h2>
+      <p>Sign up to get started</p>
+      <form id="signupForm">
+        <label>Name</label>
+        <input type="text" id="name" placeholder="Enter your name" required />
+        <span class="error" id="nError"></span>
+
+        <label>Email</label>
+        <input type="email" id="mail" placeholder="Enter your email" required />
+        <span class="error" id="mError"></span>
+
+        <label>Password</label>
+        <input type="password" id="password" placeholder="Create a password" required />
+        <span class="error" id="pError"></span>
+
+        <label>Confirm Password</label>
+        <input type="password" id="confirm-password" placeholder="Confirm your password" required />
+        <span class="error" id="cpError"></span>
+
+        <button type="submit">Sign Up</button>
+
+        <p class="signup-text">Already have an account? <a href="../HTML/login.html">Login</a></p>
+      </form>
+    </div>
+  </div>
+  <script src="../JS/signup.js"></script>
+</body>
+</html>
